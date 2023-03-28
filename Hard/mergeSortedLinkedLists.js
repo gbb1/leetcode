@@ -26,13 +26,13 @@ var mergeKLists = function(lists) {
             if (lists[i] !== null) {
                 if (lists[i].val < min) {
                     min = lists[i].val;
-                    next = new ListNode(min);
                     index = i;
-                }
+                  }
             }
             continue;
         }
 
+        next = new ListNode(min);
 
         if (out === null) {
             out = next;
