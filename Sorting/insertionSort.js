@@ -2,19 +2,19 @@
 
 function insertionSort(array) {
 
-  for (let i = 0; i < array.length; i++) {
+  for (let x = 0; x < array.length; x++) {
 
-    let j = i + 1;
-    let x = i;
+    let i = x;
+    let j = x + 1;
 
     if (array[j]) {
-      while (array[j] < array[x] && x > 0) {
+      while (array[j] < array[i] && i > 0) {
         let saveJ = array[j];
-        array[j] = array[x];
-        array[x] = saveJ;
+        array[j] = array[i];
+        array[i] = saveJ;
 
+        i--;
         j--;
-        x--;
       }
     }
   }
